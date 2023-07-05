@@ -17,7 +17,7 @@ def index(request):
         'title': 'Home',
             'todo_list': qs,
         }
-    return render(request,'list/index.html', context )
+    return render(request,'list/index.html', context ) 
 
 @login_required
 def user_profile(request, slug):
